@@ -109,20 +109,22 @@ body{
 
 .menu-contacts::before {
 	content: '';
-	display: block;
-	width: 20px;
-	height: 20px;
-	background-color: #d70b0b;
+	width: 16px;
+	height: 12px;
 	margin: 0 10px 0 0;
-	background-image: url(../images/phone.svg);
+	
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
 }
 
-/* .menu-contacts:nth-child(1)::before {
-	background-color: #0bd796;
-} */
+.menu-contacts:nth-child(1)::before {
+	background-image: url(../images/email.svg);
+}
+
+.menu-contacts:nth-child(2)::before {
+	background-image: url(../images/phone.svg);
+}
 
 .menu-contacts {
 	color: var(--secondary-color);
@@ -148,6 +150,7 @@ body{
 
 .hero {
 	text-align: center;
+	padding: 200px 0;
 }
 
 .hero-background {
@@ -187,6 +190,7 @@ body{
 	background: var(--active-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
+	border: none;
 
 	padding: 10px 32px;
 }
@@ -206,6 +210,40 @@ body{
 
 .benefits-item {
 	width: 270px;
+	display: block;
+}
+
+.benefits-item::before {
+	content: '';
+	width: 270px;
+	height: 120px;
+	background: #F5F4FA;
+	border-radius: 4px;
+	display: block;
+	margin: 0 0 30px 0;
+	
+	background-repeat: no-repeat;
+	
+	background-position: center;
+}
+
+.benefits-item:nth-child(1)::before {
+	background-image: url(../images/benefits/radio.svg);
+}
+
+.benefits-item:nth-child(2)::before {
+	background-image: url(../images/benefits/time.svg);
+	background-size: 67px 70px;
+}
+
+.benefits-item:nth-child(3)::before {
+	background-image: url(../images/benefits/computer.svg);
+	background-size: 70px 53px;
+}
+
+.benefits-item:nth-child(4)::before {
+	background-image: url(../images/benefits/astronaut\ 1.svg);
+	background-size: 55px 60px;
 }
 
 .benefits-item:not(:last-child) {
