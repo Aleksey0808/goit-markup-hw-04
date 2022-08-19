@@ -156,7 +156,7 @@ body{
 	padding: 200px 0;
 }
 
-.hero-background {
+.hero-bg {
 	width: 1600px;
 	height: 600px;
 	margin: 0 auto;
@@ -226,7 +226,7 @@ body{
 	margin: 0 0 30px 0;
 	
 	background-repeat: no-repeat;
-	
+	background-size: contain;
 	background-position: center;
 }
 
@@ -236,17 +236,14 @@ body{
 
 .benefits-item:nth-child(2)::before {
 	background-image: url(../images/benefits/time.svg);
-	background-size: 67px 70px;
 }
 
 .benefits-item:nth-child(3)::before {
 	background-image: url(../images/benefits/computer.svg);
-	background-size: 70px 53px;
 }
 
 .benefits-item:nth-child(4)::before {
 	background-image: url(../images/benefits/astronaut\ 1.svg);
-	background-size: 55px 60px;
 }
 
 .benefits-item:not(:last-child) {
