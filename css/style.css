@@ -103,30 +103,33 @@ body{
 .menu-list li:not(:last-child) {
 	margin: 0 50px 0 0;
 }
-.menu-contacts {
-	display: inline-flex;
-}
 
 .menu-contacts::before {
 	content: '';
+	display: inline-flex;
 	width: 16px;
 	height: 12px;
 	margin: 0 10px 0 0;
+	align-items: center;
+	padding: 10px 20px;
 	
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: contain;
+	background-size: 100px 100px;
+	align-self: end;
 }
 
 .menu-contacts:nth-child(1)::before {
-	background-image: url(../images/email.svg);
+	background-image: url(../images/benefits/email.svg);
+	
 }
 
 .menu-contacts:nth-child(2)::before {
-	background-image: url(../images/phone.svg);
+	background-image: url(../images/benefits/phone.svg);
+
 }
 
-.menu-contacts {
+.menu-contacts a {
 	color: var(--secondary-color);
 	font-weight: 500;
 	letter-spacing: 0.02em;
