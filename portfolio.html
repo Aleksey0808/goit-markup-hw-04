@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-skalable=0">
-  <link rel="shortcut icon" href="../goit-markup-hw-01/image/ico/logo.ico">
+  <link rel="shortcut icon" href="./image/ico/logo.ico">
 </head>
 <body>
   <header class="header">
@@ -19,7 +19,7 @@
             <a class="menu-link active" href="">Студія</a>
           </li>
           <li class="menu-item">
-            <a class="menu-link active" href="./portfolio.html">Портфоліо</a>
+            <a class="menu-link active dynamic" href="./portfolio.html">Портфоліо</a>
           </li>
           <li class="menu-item">
             <a class="menu-link active" href="">Контакти</a>
@@ -27,8 +27,18 @@
         </ul>
       </nav>
       <ul class="menu-list list">
-        <li><a class="menu-contacts active" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="menu-contacts active" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li class="menu-contacts">
+          <svg class="menu-logo-email">
+            <use href="./images/symbol-defs.svg#mail"></use>
+          </svg>
+          <a class="active" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="menu-contacts">
+          <svg class="menu-logo-phone">
+            <use href="./images/symbol-defs.svg#phone"></use>
+          </svg>
+          <a class="active" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
       </ul>
     </div>
   </header>
@@ -56,7 +66,7 @@
       <ul class="portfolio-list">
         <li class="portfolio-item">
           <a href="">
-            <img class="portfolio-imag" src="../goit-markup-hw-02/images/portfolio/img1.jpg" width="370" alt="">
+            <img class="portfolio-imag" src="./images/portfolio/img1.jpg" width="370" alt="">
             <div class="portfolio-info">
               <h2 class="portfolio-title">Технокряк</h2>
               <p class="portfolio-text">Веб-сайт</p>
@@ -65,7 +75,7 @@
         </li>
         <li class="portfolio-item">
           <a href="">
-            <img class="portfolio-imag" src="../goit-markup-hw-02/images/portfolio/img2.jpg" width="370" alt="">
+            <img class="portfolio-imag" src="./images/portfolio/img2.jpg" width="370" alt="">
             <div class="portfolio-info">
               <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
               <p class="portfolio-text">Дизайн</p>
@@ -74,7 +84,7 @@
         </li>
         <li class="portfolio-item">
           <a href="">
-            <img class="portfolio-imag" src="../goit-markup-hw-02/images/portfolio/img3.jpg" width="370" alt="">
+            <img class="portfolio-imag" src="./images/portfolio/img3.jpg" width="370" alt="">
             <div class="portfolio-info">
               <h2 class="portfolio-title">Ресторан Seafood</h2>
               <p class="portfolio-text">Додаток</p>
@@ -83,7 +93,7 @@
         </li>
         <li class="portfolio-item">
           <a href="">
-            <img class="portfolio-imag" src="../goit-markup-hw-02/images/portfolio/img4.jpg" width="370" alt="">
+            <img class="portfolio-imag" src="./images/portfolio/img4.jpg" width="370" alt="">
             <div class="portfolio-info">
               <h2 class="portfolio-title">Проєкт Prime</h2>
               <p class="portfolio-text">Маркетинг</p>
@@ -92,7 +102,7 @@
         </li>
         <li class="portfolio-item">
           <a href="">
-            <img class="portfolio-imag" src="../goit-markup-hw-02/images/portfolio/img5.jpg" width="370" alt="">
+            <img class="portfolio-imag" src="./images/portfolio/img5.jpg" width="370" alt="">
             <div class="portfolio-info">
               <h2 class="portfolio-title">Проєкт Boxes</h2>
               <p class="portfolio-text">Додаток</p>
@@ -101,7 +111,7 @@
         </li>
         <li class="portfolio-item">
           <a href="">
-            <img class="portfolio-imag" src="../goit-markup-hw-02/images/portfolio/img6.jpg" width="370" alt="">
+            <img class="portfolio-imag" src="./images/portfolio/img6.jpg" width="370" alt="">
             <div class="portfolio-info">
               <h2 class="portfolio-title">Inspiration has no Borders</h2>
               <p class="portfolio-text">Веб-сайт</p>
@@ -110,7 +120,7 @@
         </li>
         <li class="portfolio-item">
           <a href="">
-            <img class="portfolio-imag" src="../goit-markup-hw-02/images/portfolio/img7.jpg" width="370" alt="">
+            <img class="portfolio-imag" src="./images/portfolio/img7.jpg" width="370" alt="">
             <div class="portfolio-info">
               <h2 class="portfolio-title">Видання Limited Edition</h2>
               <p class="portfolio-text">Дизайн</p>
@@ -119,7 +129,7 @@
         </li>
         <li class="portfolio-item">
           <a href="">
-            <img class="portfolio-imag" src="../goit-markup-hw-02/images/portfolio/img8.jpg" width="370" alt="">
+            <img class="portfolio-imag" src="./images/portfolio/img8.jpg" width="370" alt="">
             <div class="portfolio-info">
               <h2 class="portfolio-title">Проект LAB</h2>
               <p class="portfolio-text">Маркетинг</p>
@@ -128,7 +138,7 @@
         </li>
         <li class="portfolio-item">
           <a href="">
-            <img class="portfolio-imag" src="../goit-markup-hw-02/images/portfolio/img9.jpg" width="370" alt="">
+            <img class="portfolio-imag" src="./images/portfolio/img9.jpg" width="370" alt="">
             <div class="portfolio-info">
               <h2 class="portfolio-title">Growing Business</h2>
               <p class="portfolio-text">Додаток</p>
@@ -141,20 +151,47 @@
 </main>
 <footer class="footer">
   <div class="container">
-    <a class="footer-logo menu-logo" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
     <address>
-      <ul class="footer-list">
-        <li class="footer-item">
-          <a class="footer-address active" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
-            rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-mail active" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-tel active" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      <div class="footer-contacts">
+        <a class="footer-logo menu-logo" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a class="footer-address active" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+              rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-mail active" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-tel active" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-connect">
+        <p class="footer-connect-title">приєднуйтесь</p>
+        <div class="footer-social">
+          <div class="social-br social-br-footer">
+            <svg class="social-icon" width="20" height="20">
+              <use href="./images/symbol-defs.svg#instagram"></use>
+            </svg>
+          </div>
+          <div class="social-br social-br-footer">
+            <svg class="social-icon" width="20" height="16">
+              <use href="./images/symbol-defs.svg#twitter"></use>
+            </svg>
+          </div>
+          <div class="social-br social-br-footer">
+            <svg class="social-icon" width="20" height="20">
+              <use href="./images/symbol-defs.svg#facebook"></use>
+            </svg>
+          </div>
+          <div class="social-br social-br-footer">
+            <svg class="social-icon" width="20" height="20">
+              <use href="./images/symbol-defs.svg#linkedin"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
     </address>
   </div>
 </footer>

@@ -108,34 +108,41 @@ body{
 .menu-contacts {
 	display: inline-flex;
 	align-items: center;
-}
-
-.menu-contacts::before {
-	content: '';
-	margin-right: 10px;
-
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-
-.menu-contacts:nth-child(1)::before {
-	background-image: url('../images/email.svg');
-	width: 16px;
-	height: 12px;
-}
-
-.menu-contacts:nth-child(2)::before {
-	background-image: url('../images/phone.svg');
-	width: 10px;
-	height: 16px;
+	color: #757575;
 }
 
 .menu-contacts a {
-	color: var(--secondary-color);
 	font-weight: 500;
 	letter-spacing: 0.02em;
-
+	color: inherit;
 	padding: 32px 0;
+}
+
+.menu-contacts:hover {
+	color: var(--active-color);
+	cursor: pointer;
+}
+
+.menu-logo-email {
+	width: 16px;
+	height: 12px;
+	margin: 0 10px 0 0;
+	fill: currentColor;
+}
+
+.menu-logo-phone {
+	width: 10px;
+	height: 16px;
+	margin: 0 10px 0 0;
+	fill: currentColor;
+}
+
+.menu-logo-email:hover {
+	fill: currentColor;
+}
+
+.menu-logo-phone:hover {
+	fill: currentColor;
 }
 
 .menu-item {}
@@ -149,6 +156,9 @@ body{
 	padding: 32px 0;
 }
 
+.dynamic {
+	color: var(--active-color);
+}
 
 /* index.html */
 
@@ -214,53 +224,36 @@ body{
 
 .benefits-item {
 	width: 270px;
-	
-}
-
-.benefits-item::before {
-	content: '';
-	height: 120px;
-	background: #F5F4FA;
-	border-radius: 4px;
-	display: block;
-	margin: 0 0 30px 0;
-	
-	background-repeat: no-repeat;
-	background-size: 70px;
-	background-position: center;
-}
-
-.benefits-item:nth-child(1)::before {
-	background-image: url('../images/benefits/radio.svg');
-}
-
-.benefits-item:nth-child(2)::before {
-	background-image: url('../images/benefits/time.svg');
-}
-
-.benefits-item:nth-child(3)::before {
-	background-image: url('../images/benefits/computer.svg');
-}
-
-.benefits-item:nth-child(4)::before {
-	background-image: url('../images/benefits/astronaut.svg');
 }
 
 .benefits-item:not(:last-child) {
 	margin: 0 30px 0 0;
 }
 
+.benefits-icon-bg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 270px;
+	height: 120px;
+	background: #F5F4FA;
+	margin: 0 0 30px 0;
+}
+
+.benefits-icon {
+	
+}
 
 .benefits-title {
-    color: var(--main-color);
-    font-weight: 700;
-    line-height: 1;
-		margin: 0 0 10px 0;
+	color: var(--main-color);
+	font-weight: 700;
+	line-height: 1;
+	margin: 0 0 10px 0;
 }
 
 .benefits-text {
-    color: var(--secondary-color);
-    line-height: 2;
+	color: var(--secondary-color);
+	line-height: 2;
 }
 
 .work {}
@@ -329,7 +322,41 @@ display: flex;
     color: var(--secondary-color);
     font-size: 16px;
     line-height: 1.2;
-    padding: 0 0 30px 0;
+    padding: 0 0 16px 0;
+}
+
+.team-social {
+	display: flex;
+	justify-content: center;
+	margin: 0 0 30px 0;
+}
+
+.social-br {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	color: #AFB1B8;
+}
+
+.social-br:hover {
+	background: var(--active-color);
+	color: #FFF;
+	cursor: pointer;
+}
+
+.social-br:not(:last-child) {
+	margin: 0 10px 0 0;
+}
+
+.social-icon {
+	fill: currentColor;
+}
+
+.social-icon:hover {
+	fill: currentColor;
 }
 
 .company {
@@ -338,15 +365,37 @@ display: flex;
 
 .company-list {
 	display: flex;
-}
-
-.company-item {
-	width: 170px;
+	justify-content: center;
 }
 
 .company-item:not(:last-child) {
 	margin: 0 30px 0 0;
 }
+
+.company-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 170px;
+	height: 92px;
+	border: 1px solid #AFB1B8;
+	border-radius: 4px;
+	color: #afb1b8;
+}
+
+.company-item:hover {
+	border-color: var(--active-color);
+	color: var(--active-color);
+	cursor: pointer;
+}
+
+.company-icon {
+	fill: currentColor;
+}
+.company-icon:hover {
+	fill: currentColor;
+}
+	
 
 
 /* portfolio.html */
@@ -434,6 +483,7 @@ display: flex;
 
 /* footer */
 address {
+	display: flex;
 	font-style: normal;
 }
 
@@ -442,6 +492,9 @@ address {
 	padding: 60px 0;
 }
 
+.footer-contacts {
+	margin: 0 70px 0 0;
+}
 .footer-logo {
 	display: inline-block;
 	color: #fff;
@@ -461,5 +514,22 @@ address {
 .footer-tel {
 	color: var(--secondary-color);
 	line-height: 1.5;
+}
+
+.footer-connect-title{
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.2;
+	margin: 0 0 20px 0;
+	text-transform: uppercase;
+}
+
+.social-br-footer {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social {
+	display: flex;
 }
 
