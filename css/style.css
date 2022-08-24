@@ -321,11 +321,12 @@ display: flex;
 
 .social-br:hover {
 	background: var(--active-color);
+	color: #fff;
 	cursor: pointer;
 }
 
 .social-icon {
-	fill: #FFF;
+	fill: currentColor;
 }
 
 /* company */
@@ -489,6 +490,7 @@ address {
 
 .social-br-footer {
 	background: rgba(255, 255, 255, 0.1);
+	color: #fff;
 }
 
 .footer-social {
