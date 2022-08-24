@@ -165,9 +165,9 @@ body{
 }
 
 .hero-bg {
-	width: 1600px;
-	height: 600px;
+	max-width: 1600px;
 	margin: 0 auto;
+	background: #C4C4C4;
 	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
 	background-position: center;
 	background-size: cover;
@@ -297,7 +297,7 @@ display: flex;
 	color: var(--secondary-color);
 	font-size: 16px;
 	line-height: 1.2;
-	padding: 0 0 16px 0;
+	margin: 0 0 16px 0;
 }
 
 .team-social {
@@ -321,16 +321,11 @@ display: flex;
 
 .social-br:hover {
 	background: var(--active-color);
-	color: #FFF;
 	cursor: pointer;
 }
 
 .social-icon {
-	fill: currentColor;
-}
-
-.social-icon:hover {
-	fill: currentColor;
+	fill: #FFF;
 }
 
 /* company */
@@ -439,6 +434,9 @@ display: flex;
 	line-height: 2;
 }
 
+.included {
+	color: var(--active-color);
+}
 
 /* footer */
 
