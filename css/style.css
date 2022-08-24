@@ -325,6 +325,10 @@ display: flex;
 	cursor: pointer;
 }
 
+.social-icon {
+	fill: currentColor;
+}
+
 /* company */
 
 .company-list {
